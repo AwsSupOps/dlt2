@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build && mv build webapp/res",
+    "build": "react-scripts build && mkdir -p webapp/res && mv build webapp/res", 
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
